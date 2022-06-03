@@ -1,0 +1,27 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "", email = ""},
+]
+dependencies = [
+    "eth-brownie>=1.16.4",
+    "py-solc-x>=1.1.0",
+    "python-dotenv>=0.16.0",
+    "web3>=5.23.1",
+]
+requires-python = ">=3.9"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=21.9b0",
+    "pytest>=6.2.5",
+]
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
